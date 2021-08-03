@@ -1,3 +1,6 @@
+:root{
+  --secondary:#3aa8e6;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,136 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.nav{
+  width: 100vw;
+  padding: 1rem;
+  border-bottom: 3px solid var(--secondary);
+}
+.header{
+ width: 90vw;
+ margin: 0 auto;
+  display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.header ul{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+ .header ul li{
+   list-style: none;
+   text-transform: uppercase;
+   padding-left: 2rem;
+   font-size: 1.5rem;
+   font-weight: 600;
+ }
+ a{
+   text-decoration: none;
+   color:black;
+ }
+ a:hover{
+    color: var(--secondary);
+    padding-left: 7%;
+ }
+ @media only screen and (max-width: 768px) {
+  .header ul {
+    flex-direction: column;
+  }
+  .header ul {
+    display:none;
+  }
+  
+}
+ .hero{
+  border-bottom: 1px solid ;
+} 
+.imge{
+  width: 100%;
+}
+.hero article{
+  text-align: center;
+  margin:3rem;
+}
+.hero article p{
+  font-size: 3rem;
+  font-weight: 800;
+}
+.hero article span{
+  font-size: 2.5rem;
+  color: #92969F;
+}
+.card{
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: #323232;
+  color: wheat;
+}
+.card:hover{
+  transform: scale(1.1);
+  transition-duration: 1.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.card img{
+  width: 100%;
+  height: 25rem;
+  border-radius: 2rem;
+}
+.card button{
+  background-color: white;
+  font-size: 1.5em;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.card button:hover{
+    background-color: wheat;
+    color:white;
+}
+.social-media ul{
+   list-style: none;
+   display: flex;
+   font-size: 2.5rem;
+}
+.social-media ul li{
+  padding-left: 1em;
+}
+.social-media ul li:hover{
+  color: white;
+  cursor: pointer;
+}
+.footer{
+  background-color: #323232 ;
+  color: wheat;
+}
+.login button{
+  background-color:var(--secondary) ;
+  font-size: 1.5rem;
+  color: aliceblue;
+  border-radius: 25px;
+  border: none;
+  padding: 10px;
+
+}
+.login button:hover{
+  background-color: #2b82b4;
+}
+.login p:hover{
+    color: var(--secondary);
+}
+.about{
+  border-top: 1px solid;
+}
+.AboutCard{
+  width: 45%;
+}
+.AboutCard img{
+  height: 9rem;
+ 
+}
+.abt{
+  margin: 0 auto;
 }
